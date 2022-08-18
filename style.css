@@ -1,8 +1,9 @@
 body{
   font-family: 'Overpass';
-  background-color: hsl(216, 12%, 8%);
+  background-color: black;
   display: grid;
   justify-items: center;
+  height: 700px;
   margin: 0rem;
 }
 
@@ -39,28 +40,49 @@ a{
 }
 
 button{
-  background-color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
   border-radius: 100px;
   border: none;
   width: 2.5rem;
   height: 2.5rem;
   font-weight: 400;
   font-family: 'Overpass';
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover{
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.active{
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.subtexto{
+  text-align: center;
 }
 
 .caixa{
-  background-color: hsl(213, 19%, 18%);
+  background-color: hsl(216, 12%, 8%);
   grid-column: 1;
   border-radius: 2rem;
   margin: 170px;
-  width: 400px;
+  width: 380px;
   height: 400px;
 }
 
 .img{
-  background-color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
   border-radius: 50px;
   padding: 0.75rem 0.75rem;
+}
+
+.img2{
+  margin: auto;
 }
 
 .itens{
@@ -73,4 +95,42 @@ button{
   display: flex;
   justify-content: space-between;
   margin-right: 10px;
+}
+
+.submeter{
+  display: inline-flex;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  width: 330px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-right: 10px;
+}
+
+.submeter:hover{
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden{
+  display: none;
+}
+
+.avaliacao{
+  display: inline-flex;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50px;
+  font-weight: 400;
+  width: 170px;
+  height: 30px;
+  color: hsl(25, 97%, 53%);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
 }

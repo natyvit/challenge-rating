@@ -8,11 +8,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Roboto&family=Roboto+Serif:opsz,wght@8..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="./main.js"></script>
   <title>Desafio</title>
 </head>
 
 <body>
-  <div class="caixa">
+  <div class="caixa submissao">
     <div class="itens">
       <img class="img" src="./imagens/icon-star.svg" alt="">
       <div>
@@ -26,12 +27,23 @@
         <button>4</button>
         <button>5</button>
       </div>
-      <a href="/">submit</a>
+      <button class="submeter">submit</button>
+      <!-- <a href="/">submit</a> -->
     </div>
 
-
-
   </div>
+
+  <div class="caixa confirmacao hidden"> 
+    <div class="itens">
+      <img class="img2" src="./imagens/illustration-thank-you.svg" alt="">
+      <p class="avaliacao"></p>
+      <div class="subtexto">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
