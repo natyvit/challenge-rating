@@ -1,0 +1,76 @@
+body{
+  font-family: 'Overpass';
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  justify-items: center;
+  margin: 0rem;
+}
+
+h1{
+  margin: 0rem;
+  color: white;
+}
+
+p{
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+  margin: 0rem;
+  font-weight: 400;
+}
+
+h1{
+  line-height: -1,25rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+a{
+  display: inline-flex;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  width: 330px;
+  height: 40px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+button{
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 100px;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-weight: 400;
+  font-family: 'Overpass';
+}
+
+.caixa{
+  background-color: hsl(213, 19%, 18%);
+  grid-column: 1;
+  border-radius: 2rem;
+  margin: 170px;
+  width: 400px;
+  height: 400px;
+}
+
+.img{
+  background-color: hsl(216, 12%, 54%);
+  border-radius: 50px;
+  padding: 0.75rem 0.75rem;
+}
+
+.itens{
+  display: grid;
+  padding: 30px;
+  gap: 30px;
+}
+
+.botoes{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
