@@ -1,35 +1,42 @@
 body {
+  --black: hsl(0, 0%, 0%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --light-grey: hsl(217, 12%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --orange: hsl(25, 97%, 53%);
+
   font-family: "Overpass";
-  background-color: black;
+  background-color: var(--black);
   display: grid;
   justify-items: center;
-  height: 700px;
+  height: 43.75rem;
   margin: 0rem;
 }
 
 h1 {
   margin: 0rem;
-  color: white;
+  color: var(--white);
   line-height: -1, 25rem;
-  margin-bottom: 10px;
+  margin-bottom: .625rem;
   font-weight: 700;
 }
 
 p {
-  font-size: 15px;
-  color: hsl(217, 12%, 63%);
+  font-size: .9375rem;
+  color: var(--light-grey);
   margin: 0rem;
   font-weight: 400;
 }
 
 a {
   display: inline-flex;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--orange);
+  color: var(--white);
   text-decoration: none;
-  width: 330px;
-  height: 40px;
-  border-radius: 50px;
+  width: 20.625rem;
+  height: 2.5rem;
+  border-radius: 3.125rem;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -37,9 +44,9 @@ a {
 }
 
 button {
-  background-color: hsl(213, 19%, 18%);
-  color: hsl(217, 12%, 63%);
-  border-radius: 100px;
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  border-radius: 6.25rem;
   border: none;
   width: 2.5rem;
   height: 2.5rem;
@@ -50,13 +57,13 @@ button {
 }
 
 button:hover {
-  background-color: hsl(217, 12%, 63%);
-  color: white;
+  background-color: var(--light-grey);
+  color: var(--white);
 }
 
 .active {
-  background-color: hsl(25, 97%, 53%);
-  color: white;
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .subtexto {
@@ -64,17 +71,17 @@ button:hover {
 }
 
 .caixa {
-  background-color: hsl(216, 12%, 8%);
+  background-color: var(--very-dark-blue);
   grid-column: 1;
   border-radius: 2rem;
   margin: auto;
-  width: 380px;
-  height: 400px;
+  width: 23.75rem;
+  height: 25rem;
 }
 
 .img {
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 50px;
+  background-color: var(--dark-blue);
+  border-radius: 3.125rem;
   padding: 0.75rem 0.75rem;
 }
 
@@ -84,34 +91,33 @@ button:hover {
 
 .itens {
   display: grid;
-  padding: 30px;
-  gap: 30px;
+  padding: 1.875rem;
+  gap: 1.875rem;
 }
 
 .botoes {
   display: flex;
   justify-content: space-between;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .submeter {
   display: inline-flex;
-  background-color: hsl(25, 97%, 53%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--orange);
+  color: var(--white);
   text-decoration: none;
-  width: 330px;
-  height: 40px;
-  border-radius: 50px;
+  width: auto;
+  height: 2.5rem;
+  border-radius: 3.125rem;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
   font-weight: 400;
-  margin-right: 10px;
 }
 
 .submeter:hover {
-  background-color: white;
-  color: hsl(25, 97%, 53%);
+  background-color: var(--white);
+  color: var(--orange);
 }
 
 .hidden {
@@ -120,30 +126,25 @@ button:hover {
 
 .avaliacao {
   display: inline-flex;
-  background-color: hsl(213, 19%, 18%);
-  border-radius: 50px;
+  background-color: var(--dark-blue);
+  border-radius: 3.125rem;
   font-weight: 400;
-  width: 170px;
-  height: 30px;
-  color: hsl(25, 97%, 53%);
+  width: 10.625rem;
+  height: 1.875rem;
+  color: var(--orange);
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 
-@media (min-width: 375px) and (max-width: 1440px) {
+@media (min-width: 23.4375rem) and (max-width: 90rem) {
   .caixa {
     margin: auto;
-    width: 330px;
-    height: 380px;
+    width: 20.625rem;
+    height: 23.75rem;
   }
 
-  .itens{
-    padding: 20px;
-  }
-
-  .submeter{
-    margin-right: 0px;
-    width: 300px;
+  .itens {
+    padding: 1.25rem;
   }
 }
